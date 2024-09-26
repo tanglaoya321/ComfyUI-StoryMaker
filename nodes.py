@@ -119,7 +119,7 @@ class SinglePortraitNode(StoryMakerBaseNode):
 
     RETURN_TYPES = ("IMAGE",)
     FUNCTION = "generate"
-    CATEGORY = "AbcZone"
+    CATEGORY = "StoryMaker"
 
     def generate(self, image, mask_image, prompt, negative_prompt, seed):
         self.shared.initialize()
@@ -161,7 +161,7 @@ class TwoPortraitNode(StoryMakerBaseNode):
 
     RETURN_TYPES = ("IMAGE",)
     FUNCTION = "generate"
-    CATEGORY = "AbcZone"
+    CATEGORY = "StoryMaker"
 
     def generate(self, image1, mask_image1, image2, mask_image2, prompt, negative_prompt, seed):
         self.shared.initialize()
@@ -204,7 +204,7 @@ class SwapClothNode(StoryMakerBaseNode):
 
     RETURN_TYPES = ("IMAGE",)
     FUNCTION = "generate"
-    CATEGORY = "AbcZone"
+    CATEGORY = "StoryMaker"
 
     def generate(self, image, mask_image, cloth, prompt, negative_prompt, seed):
         self.shared.initialize()
